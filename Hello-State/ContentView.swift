@@ -10,19 +10,33 @@ import SwiftUI
 struct ContentView: View {
 	
 	@State var name: String = "Nazar"
+	@State var tasks = [Task]()
+	
+	private func addTask() {
+		self.tasks.append(Task(name: "Buy new book"))
+	}
 	
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text(name)
+		VStack {
+			Image(systemName: "globe")
+				.imageScale(.large)
+				.foregroundColor(.accentColor)
+			Text(name)
 				.font(.largeTitle)
 			Button("Change Name") {
 				name = "Nazar Stf"
 			}
-        }
-        .padding()
+			List {
+				
+				Button(action: addTask) {
+					Text("Add Task")
+				}
+				
+				ForEach(tasks) { task in
+					Text(task.name)
+				}
+			}
+		}
     }
 }
 

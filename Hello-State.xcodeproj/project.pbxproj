@@ -11,6 +11,7 @@
 		746C35262A29EAFF0077E569 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746C35252A29EAFF0077E569 /* ContentView.swift */; };
 		746C35282A29EB010077E569 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 746C35272A29EB010077E569 /* Assets.xcassets */; };
 		746C352B2A29EB010077E569 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 746C352A2A29EB010077E569 /* Preview Assets.xcassets */; };
+		746C35332A29F1BF0077E569 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746C35322A29F1BF0077E569 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		746C35252A29EAFF0077E569 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		746C35272A29EB010077E569 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		746C352A2A29EB010077E569 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		746C35322A29F1BF0077E569 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		746C35222A29EAFF0077E569 /* Hello-State */ = {
 			isa = PBXGroup;
 			children = (
+				746C35312A29F1A80077E569 /* Models */,
 				746C35232A29EAFF0077E569 /* Hello_StateApp.swift */,
 				746C35252A29EAFF0077E569 /* ContentView.swift */,
 				746C35272A29EB010077E569 /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				746C352A2A29EB010077E569 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		746C35312A29F1A80077E569 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				746C35322A29F1BF0077E569 /* Task.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				746C35262A29EAFF0077E569 /* ContentView.swift in Sources */,
+				746C35332A29F1BF0077E569 /* Task.swift in Sources */,
 				746C35242A29EAFF0077E569 /* Hello_StateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
